@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 
 AWS.config.update({
     "region": "us-east-1",
-    "endpoint" : "dynamodb.us-east-1.amazonaws.com",
+    "endpoint" : "https://dynamodb.us-east-1.amazonaws.com",
     "accessKeyId"  : "ASIARV4AYRH3HPQQL4VI",
     "secretAccessKey" : "JkIsnRDGNHUqPhVOmn77g/Cb5Hc74X3oirmIBBLe"
 });
