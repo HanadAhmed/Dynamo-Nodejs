@@ -5,12 +5,12 @@ var bodyParser = require('body-parser');
 AWS.config.update({
     "region": "us-east-1",
     "endpoint" : "https://dynamodb.us-east-1.amazonaws.com",
-    "accessKeyId"  : "ASIARV4AYRH3HPQQL4VI",
-    "secretAccessKey" : "JkIsnRDGNHUqPhVOmn77g/Cb5Hc74X3oirmIBBLe"
+    "aws_access_key_id"  : "ASIARV4AYRH3HPQQL4VI",
+    "aws_secret_access_key" : "JkIsnRDGNHUqPhVOmn77g/Cb5Hc74X3oirmIBBLe"
 });
 
-console.log(process.env.AWS_SECRET_ACCESS_KEY);
-console.log(process.env.AWS_SESSION_TOKEN);
+//console.log(process.env.AWS_SECRET_ACCESS_KEY);
+//console.log(process.env.AWS_SESSION_TOKEN);
 
 var docClient = new AWS.DynamoDB.DocumentClient();
 
