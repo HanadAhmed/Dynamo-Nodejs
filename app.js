@@ -20,6 +20,8 @@ var app = express();
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
+app.use( express.static(__dirname + "/views" ) );
+
 app.set('view engine', 'ejs');
 
 app.get('/signup', function (req, res) {
